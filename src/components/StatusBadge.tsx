@@ -6,7 +6,7 @@ const statusConfig: Record<
   { color: string; label: string; pulse?: boolean }
 > = {
   pending: { color: "text-slate-400 bg-slate-100", label: "pending" },
-  running: { color: "text-teal-600 bg-teal-50", label: "running", pulse: true },
+  running: { color: "text-[#1e3a5f] bg-[#e8eef4]", label: "running", pulse: true },
   complete: { color: "text-emerald-500 bg-emerald-50", label: "complete" },
   error: { color: "text-red-500 bg-red-50", label: "error" },
   cancelled: { color: "text-slate-500 bg-slate-100", label: "cancelled" },

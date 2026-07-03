@@ -29,16 +29,16 @@ export function Header({ phase, hasMessages, onNewChat }: HeaderProps) {
 
   const phaseColor: Record<ResearchPhase, string> = {
     idle: "text-slate-400",
-    planning: "text-teal-600",
-    researching: "text-teal-600",
+    planning: "text-[#1e3a5f]",
+    researching: "text-[#1e3a5f]",
     synthesizing: "text-amber-600",
     complete: "text-emerald-600",
   };
 
   const phaseDotColor: Record<ResearchPhase, string> = {
     idle: "bg-slate-300",
-    planning: "bg-teal-500",
-    researching: "bg-teal-500",
+    planning: "bg-[#1e3a5f]",
+    researching: "bg-[#1e3a5f]",
     synthesizing: "bg-amber-500",
     complete: "bg-emerald-500",
   };
@@ -47,9 +47,9 @@ export function Header({ phase, hasMessages, onNewChat }: HeaderProps) {
     <header className="flex items-center gap-3 border-b border-[#e2e8f0] bg-white/85 backdrop-blur-md px-6 py-3.5">
       {/* Logo + Title */}
       <div className="flex items-center gap-2.5">
-        <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-teal-50">
+        <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#e8eef4]">
           <svg
-            className="h-4 w-4 text-teal-600"
+            className="h-4 w-4 text-[#1e3a5f]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -62,7 +62,7 @@ export function Header({ phase, hasMessages, onNewChat }: HeaderProps) {
             />
           </svg>
         </div>
-        <h1 className="text-[15px] font-semibold tracking-tight text-slate-800">
+        <h1 className="text-[15px] font-semibold tracking-tight text-[#3e2723]">
           {t.appTitle}
         </h1>
       </div>

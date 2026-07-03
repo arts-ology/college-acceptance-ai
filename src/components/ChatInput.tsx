@@ -40,13 +40,13 @@ export function ChatInput({ onSend, onStop, isStreaming }: ChatInputProps) {
           placeholder={t.inputPlaceholder}
           disabled={isStreaming}
           onKeyDown={handleKeyDown}
-          className="flex-1 rounded-xl border border-[#e2e8f0] bg-[#f8fafc] px-4 py-2.5 text-[13px] outline-none transition-all duration-200 placeholder:text-slate-400 focus:border-teal-300 focus:bg-white focus:shadow-[0_0_0_3px_rgba(13,148,136,0.08)] disabled:opacity-40"
+          className="flex-1 rounded-xl border border-[#e2e8f0] bg-[#f8fafc] px-4 py-2.5 text-[13px] outline-none transition-all duration-200 placeholder:text-slate-400 focus:border-[#8faabe] focus:bg-white focus:shadow-[0_0_0_3px_rgba(30,58,95,0.08)] disabled:opacity-40"
         />
         {isStreaming ? (
           <button
             type="button"
             onClick={onStop}
-            className="stop-btn cursor-pointer flex items-center gap-1.5 rounded-xl bg-teal-600 px-4 py-2.5 text-[13px] font-medium text-white transition-all duration-200 hover:bg-teal-700 active:scale-95"
+            className="stop-btn cursor-pointer flex items-center gap-1.5 rounded-xl bg-[#1e3a5f] px-4 py-2.5 text-[13px] font-medium text-white transition-all duration-200 hover:bg-[#152d4a] active:scale-95"
           >
             <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
               <rect x="6" y="6" width="12" height="12" rx="2" />
@@ -56,7 +56,7 @@ export function ChatInput({ onSend, onStop, isStreaming }: ChatInputProps) {
         ) : (
           <button
             type="submit"
-            className="cursor-pointer flex items-center gap-1.5 rounded-xl bg-teal-600 px-4 py-2.5 text-[13px] font-medium text-white transition-all duration-200 hover:bg-teal-500"
+            className="cursor-pointer flex items-center gap-1.5 rounded-xl bg-[#1e3a5f] px-4 py-2.5 text-[13px] font-medium text-white transition-all duration-200 hover:bg-[#2a5080]"
           >
             {t.sendButton}
             <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

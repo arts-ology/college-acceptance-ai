@@ -13,20 +13,6 @@ interface WelcomeScreenProps {
   onRemoveConversation?: (id: string) => void;
 }
 
-const cardIcons = [
-  <svg key="search" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-  </svg>,
-  <svg key="rocket" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.58-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
-  </svg>,
-  <svg key="bolt" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-  </svg>,
-  <svg key="database" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
-  </svg>,
-];
 
 // Format relative time for conversation timestamps
 function formatRelativeTime(timestamp: number, locale: string): string {
@@ -56,9 +42,9 @@ export function WelcomeScreen({ onSelect, onLoadConversation, storedConversation
 
   return (
     <div className="flex flex-1 flex-col items-center overflow-y-auto px-6 pt-[12vh] pb-8">
-      <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-teal-50">
+      <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#e8eef4]">
         <svg
-          className="h-7 w-7 text-teal-600"
+          className="h-7 w-7 text-[#1e3a5f]"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -72,30 +58,13 @@ export function WelcomeScreen({ onSelect, onLoadConversation, storedConversation
         </svg>
       </div>
 
-      <h2 className="mb-1.5 text-xl font-semibold tracking-tight text-slate-800">
+      <h2 className="mb-1.5 text-xl font-semibold tracking-tight text-[#3e2723]">
         {t.welcomeTitle}
       </h2>
-      <p className="mb-8 max-w-md text-center text-sm leading-relaxed text-slate-500">
+      <p className="mb-8 max-w-md text-center text-sm leading-relaxed text-[#795548]">
         {t.welcomeSubtitle}
       </p>
 
-      <div className="grid w-full max-w-2xl grid-cols-1 gap-3 sm:grid-cols-2">
-        {t.presetQuestions.map((q, i) => (
-          <button
-            key={i}
-            onClick={() => onSelect(q)}
-            className="group cursor-pointer rounded-xl border border-[#e5e5e3] bg-white p-5 text-left transition-all duration-200 hover:border-teal-200 hover:shadow-[0_2px_8px_rgba(13,148,136,0.10)]"
-            style={{ animation: `slideUp 0.3s ease ${i * 0.06}s both` }}
-          >
-            <span className="mb-2 block text-teal-400 transition-colors duration-200 group-hover:text-teal-600">
-              {cardIcons[i % 4]}
-            </span>
-            <span className="text-[13px] leading-relaxed text-slate-600 transition-colors duration-200 group-hover:text-slate-800">
-              {q}
-            </span>
-          </button>
-        ))}
-      </div>
 
       {/* Recent conversations */}
       {storedConversations && storedConversations.length > 0 && onLoadConversation && (
@@ -110,7 +79,7 @@ export function WelcomeScreen({ onSelect, onLoadConversation, storedConversation
             {storedConversations.map((conv) => (
               <div
                 key={conv.id}
-                className="group flex items-center gap-3 rounded-lg border border-slate-100 bg-white px-4 py-3 transition-all duration-200 hover:border-teal-200 hover:shadow-[0_1px_4px_rgba(13,148,136,0.08)]"
+                className="group flex items-center gap-3 rounded-lg border border-slate-100 bg-white px-4 py-3 transition-all duration-200 hover:border-[#8faabe] hover:shadow-[0_1px_4px_rgba(30,58,95,0.08)]"
               >
                 <button
                   onClick={() => onLoadConversation(conv.id)}

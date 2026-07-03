@@ -1,17 +1,12 @@
 import type { Translations } from "./types";
 
 export const zh: Translations = {
-  appTitle: "Deep Research",
+  appTitle: "Acceptance AI",
   appSubtitle: "AI 专家研究助手",
 
   welcomeTitle: "你想研究什么？",
   welcomeSubtitle: "提出一个问题，专家研究团队将为你搜索、分析并汇总答案。",
-  presetQuestions: [
-    "最近科技圈有什么新闻？",
-    "世界上最受欢迎的编程语言有哪些？",
-    "React 和 Vue.js 各有什么优劣势？",
-    "PostgreSQL、MySQL 和 MongoDB 怎么选？",
-  ],
+  presetQuestions: [],
 
   inputPlaceholder: "输入你想研究的问题…",
   sendButton: "发送",

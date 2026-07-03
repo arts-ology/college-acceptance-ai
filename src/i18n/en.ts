@@ -1,18 +1,13 @@
 import type { Translations } from "./types";
 
 export const en: Translations = {
-  appTitle: "Deep Research",
+  appTitle: "Acceptance AI",
   appSubtitle: "AI Expert Research Assistant",
 
   welcomeTitle: "What would you like to research?",
   welcomeSubtitle:
     "Ask a question and a team of expert researchers will search, analyze, and summarize the answer for you.",
-  presetQuestions: [
-    "What's the latest news in the tech world?",
-    "What are the most popular programming languages?",
-    "What are the pros and cons of React vs Vue.js?",
-    "When to use PostgreSQL vs MySQL vs MongoDB?",
-  ],
+  presetQuestions: [],
 
   inputPlaceholder: "Enter your research question…",
   sendButton: "Send",

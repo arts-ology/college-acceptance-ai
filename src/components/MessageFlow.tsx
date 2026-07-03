@@ -83,9 +83,9 @@ export function MessageFlow({ items, isStreaming, phase }: MessageFlowProps) {
                   <div className="max-w-[90%]">
                     {/* Avatar + label */}
                     <div className="mb-1.5 flex items-center gap-2">
-                      <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-teal-50">
+                      <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-[#e8eef4]">
                         <svg
-                          className="h-3.5 w-3.5 text-teal-600"
+                          className="h-3.5 w-3.5 text-[#1e3a5f]"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -98,14 +98,14 @@ export function MessageFlow({ items, isStreaming, phase }: MessageFlowProps) {
                           />
                         </svg>
                       </div>
-                      <span className="text-sm font-semibold text-teal-700">
+                      <span className="text-sm font-semibold text-[#1e3a5f]">
                         {t.coordinator}
                       </span>
                     </div>
                     {/* Content with left accent line */}
                     <div className="relative pl-4 text-[13px] leading-relaxed text-slate-700">
                       <div
-                        className={`absolute left-0 top-0 bottom-0 w-[2px] rounded-full bg-teal-400 ${
+                        className={`absolute left-0 top-0 bottom-0 w-[2px] rounded-full bg-[#1e3a5f] ${
                           isStreaming && idx === items.length - 1
                             ? "animate-pulse"
                             : "opacity-50"
@@ -117,7 +117,7 @@ export function MessageFlow({ items, isStreaming, phase }: MessageFlowProps) {
                           {isStreaming &&
                             idx === items.length - 1 &&
                             !item.message.hasSubAgents && (
-                              <span className="ml-0.5 inline-block h-4 w-[2px] animate-pulse bg-teal-400 align-middle" />
+                              <span className="ml-0.5 inline-block h-4 w-[2px] animate-pulse bg-[#1e3a5f] align-middle" />
                             )}
                         </>
                       ) : (
@@ -175,9 +175,9 @@ export function MessageFlow({ items, isStreaming, phase }: MessageFlowProps) {
             >
               <div className="max-w-[90%]">
                 <div className="mb-1.5 flex items-center gap-2">
-                  <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-teal-50">
+                  <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-[#e8eef4]">
                     <svg
-                      className="h-3.5 w-3.5 text-teal-600"
+                      className="h-3.5 w-3.5 text-[#1e3a5f]"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -190,12 +190,12 @@ export function MessageFlow({ items, isStreaming, phase }: MessageFlowProps) {
                       />
                     </svg>
                   </div>
-                  <span className="text-sm font-semibold text-teal-700">
+                  <span className="text-sm font-semibold text-[#1e3a5f]">
                     {t.coordinator}
                   </span>
                 </div>
                 <div className="relative pl-4 text-[13px] leading-relaxed text-slate-500">
-                  <div className="absolute left-0 top-0 bottom-0 w-[2px] rounded-full bg-teal-400 animate-pulse" />
+                  <div className="absolute left-0 top-0 bottom-0 w-[2px] rounded-full bg-[#1e3a5f] animate-pulse" />
                   <TypingIndicator />
                 </div>
               </div>
@@ -212,9 +212,9 @@ export function MessageFlow({ items, isStreaming, phase }: MessageFlowProps) {
             >
               <div className="max-w-[90%]">
                 <div className="mb-1.5 flex items-center gap-2">
-                  <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-teal-50">
+                  <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-[#e8eef4]">
                     <svg
-                      className="h-3.5 w-3.5 text-teal-600"
+                      className="h-3.5 w-3.5 text-[#1e3a5f]"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -227,12 +227,12 @@ export function MessageFlow({ items, isStreaming, phase }: MessageFlowProps) {
                       />
                     </svg>
                   </div>
-                  <span className="text-sm font-semibold text-teal-700">
+                  <span className="text-sm font-semibold text-[#1e3a5f]">
                     {t.coordinator}
                   </span>
                 </div>
                 <div className="relative pl-4 text-[13px] leading-relaxed text-slate-500">
-                  <div className="absolute left-0 top-0 bottom-0 w-[2px] rounded-full bg-teal-400 animate-pulse" />
+                  <div className="absolute left-0 top-0 bottom-0 w-[2px] rounded-full bg-[#1e3a5f] animate-pulse" />
                   <TypingIndicator />
                 </div>
               </div>

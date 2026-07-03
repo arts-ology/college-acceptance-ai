@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 @import "tailwindcss";
 
 /* ── Design Tokens ── */
 :root {
-  --color-primary: #0d9488;
-  --color-primary-hover: #0f766e;
-  --color-surface: #f9fafb;
+  --color-primary: #1e3a5f;
+  --color-primary-hover: #152d4a;
+  --color-surface: #faf9f6;
   --color-surface-elevated: #ffffff;
-  --color-surface-secondary: #f8fafb;
-  --color-surface-tertiary: #f1f5f9;
-  --color-border: #e2e8f0;
-  --color-border-hover: #99f6e4;
-  --color-text: #0f172a;
-  --color-text-secondary: #334155;
-  --color-text-muted: #64748b;
+  --color-surface-secondary: #f5f0e8;
+  --color-surface-tertiary: #ebe5d9;
+  --color-border: #d4c5a9;
+  --color-border-hover: #8faabe;
+  --color-text: #3e2723;
+  --color-text-secondary: #5d4037;
+  --color-text-muted: #795548;
   --color-shadow: rgba(0, 0, 0, 0.04);
   --color-shadow-md: rgba(0, 0, 0, 0.06);
   --radius-sm: 8px;
@@ -28,14 +28,12 @@
 /* ── Base ── */
 body {
   margin: 0;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "SF Pro Display",
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--color-text);
   background: var(--color-surface);
-  background-color: #fafaf9;
-  letter-spacing: -0.01em;
+  background-color: #faf9f6;
 }
 
 /* ── Scrollbar ── */
@@ -86,12 +84,12 @@ body {
 /* ── Stop button breathing animation ── */
 .stop-btn {
   animation: stop-breathe 2s ease-in-out infinite;
-  box-shadow: 0 0 0 0 rgba(13, 148, 136, 0.4);
+  box-shadow: 0 0 0 0 rgba(30, 58, 95, 0.4);
 }
 
 @keyframes stop-breathe {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(13, 148, 136, 0.4); }
-  50% { box-shadow: 0 0 0 4px rgba(13, 148, 136, 0.08); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(30, 58, 95, 0.4); }
+  50% { box-shadow: 0 0 0 4px rgba(30, 58, 95, 0.08); }
 }
 
 /* ── Markdown content ── */
@@ -175,13 +173,13 @@ body {
 }
 
 .markdown-content a {
-  color: #0f766e;
+  color: #1e3a5f;
   text-decoration: none;
   font-weight: 500;
 }
 
 .markdown-content a:hover {
-  color: #115e59;
+  color: #152d4a;
   text-decoration: underline;
 }
 
